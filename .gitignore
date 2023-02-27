@@ -3,3 +3,6 @@
 .project
 .settings
 /bin/
+.iml
+.idea/workspace.xml
+.xml

@@ -17,7 +17,7 @@ public class ContaCorrente extends Conta{
 		this.limite = limite;
 	}
 	
-	@Override //Super classse e está sobrescrevemdo o metodo sacar
+	@Override
 	public boolean sacar(float valor) {
 		
 		if(this.getSaldo() + this.getLimite() < valor) {

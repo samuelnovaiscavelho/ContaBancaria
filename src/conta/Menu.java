@@ -43,7 +43,7 @@ public class Menu {
 			System.out.println("                BANCO DO BRAZIL COM Z                ");
 			System.out.println("                                                     ");
 			System.out.println("*****************************************************");
-			System.out.println(Cores.TEXT_WHITE + Cores.ANSI_BLACK_BACKGROUND + "                                                     ");
+			System.out.println("                                                     ");
 			System.out.println("            1 - Criar Conta                          ");
 			System.out.println("            2 - Listar todas as Contas               ");
 			System.out.println("            3 - Buscar Conta por Numero              ");
@@ -185,7 +185,7 @@ public class Menu {
 					System.out.println("Valor do Saque: ");
 					valor = leia.nextFloat();
 					
-					// Chamada para o Método Sacar
+					contas.sacar(numero, valor);
 					
 					keyPress();
 					break;
@@ -198,7 +198,7 @@ public class Menu {
 					System.out.println("Valor do Depósito: ");
 					valor = leia.nextFloat();
 					
-					// Chamada para o Método Depositar
+					contas.depositar(numero, valor);
 
 					keyPress();
 					break;
@@ -214,7 +214,7 @@ public class Menu {
 					System.out.println("Valor da Transferência: ");
 					valor = leia.nextFloat();
 					
-					// Chamada para o Método Transferir
+					contas.transferir(numero, numeroDestino, valor);
 					
 					keyPress();
 					break;
